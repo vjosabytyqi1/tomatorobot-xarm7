@@ -1,0 +1,1 @@
+/home/hayashi/xarm7_ws/src/xarm_ros2/xarm_msgs/msg/CIOState.msg

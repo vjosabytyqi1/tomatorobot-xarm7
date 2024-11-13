@@ -1,0 +1,1 @@
+/home/hayashi/xarm7_ws/build/xarm_msgs/rosidl_cmake/srv/RobotiqActivate_Request.msg

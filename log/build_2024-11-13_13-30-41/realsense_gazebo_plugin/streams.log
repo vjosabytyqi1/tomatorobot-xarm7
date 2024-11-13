@@ -1,0 +1,29 @@
+[0.510s] Invoking command in '/home/hayashi/xarm7_ws/build/realsense_gazebo_plugin': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hayashi/xarm7_ws/install/xarm_motion_planning:/home/hayashi/xarm7_ws/install/uf_ros_lib:/home/hayashi/ws_moveit/install/moveit_configs_utils:/home/hayashi/ws_moveit/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake --build /home/hayashi/xarm7_ws/build/realsense_gazebo_plugin -- -j16 -l16
+[0.706s] [100%] Built target realsense_gazebo_plugin
+[0.964s] Invoked command in '/home/hayashi/xarm7_ws/build/realsense_gazebo_plugin' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hayashi/xarm7_ws/install/xarm_motion_planning:/home/hayashi/xarm7_ws/install/uf_ros_lib:/home/hayashi/ws_moveit/install/moveit_configs_utils:/home/hayashi/ws_moveit/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake --build /home/hayashi/xarm7_ws/build/realsense_gazebo_plugin -- -j16 -l16
+[1.066s] Invoking command in '/home/hayashi/xarm7_ws/build/realsense_gazebo_plugin': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hayashi/xarm7_ws/install/xarm_motion_planning:/home/hayashi/xarm7_ws/install/uf_ros_lib:/home/hayashi/ws_moveit/install/moveit_configs_utils:/home/hayashi/ws_moveit/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake --install /home/hayashi/xarm7_ws/build/realsense_gazebo_plugin
+[1.093s] -- Install configuration: ""
+[1.093s] -- Execute custom install script
+[1.096s] -- Up-to-date symlink: /home/hayashi/xarm7_ws/install/realsense_gazebo_plugin/lib/librealsense_gazebo_plugin.so
+[1.096s] -- Up-to-date symlink: /home/hayashi/xarm7_ws/install/realsense_gazebo_plugin/include//realsense_gazebo_plugin/RealSensePlugin.h
+[1.096s] -- Up-to-date symlink: /home/hayashi/xarm7_ws/install/realsense_gazebo_plugin/include//realsense_gazebo_plugin/gazebo_ros_realsense.h
+[1.097s] -- Up-to-date symlink: /home/hayashi/xarm7_ws/install/realsense_gazebo_plugin/share/realsense_gazebo_plugin/environment/library_path.sh
+[1.097s] -- Up-to-date symlink: /home/hayashi/xarm7_ws/install/realsense_gazebo_plugin/share/realsense_gazebo_plugin/environment/library_path.dsv
+[1.097s] -- Up-to-date symlink: /home/hayashi/xarm7_ws/install/realsense_gazebo_plugin/share/ament_index/resource_index/package_run_dependencies/realsense_gazebo_plugin
+[1.098s] -- Up-to-date symlink: /home/hayashi/xarm7_ws/install/realsense_gazebo_plugin/share/ament_index/resource_index/parent_prefix_path/realsense_gazebo_plugin
+[1.098s] -- Up-to-date symlink: /home/hayashi/xarm7_ws/install/realsense_gazebo_plugin/share/realsense_gazebo_plugin/environment/ament_prefix_path.sh
+[1.098s] -- Up-to-date symlink: /home/hayashi/xarm7_ws/install/realsense_gazebo_plugin/share/realsense_gazebo_plugin/environment/ament_prefix_path.dsv
+[1.098s] -- Up-to-date symlink: /home/hayashi/xarm7_ws/install/realsense_gazebo_plugin/share/realsense_gazebo_plugin/environment/path.sh
+[1.099s] -- Up-to-date symlink: /home/hayashi/xarm7_ws/install/realsense_gazebo_plugin/share/realsense_gazebo_plugin/environment/path.dsv
+[1.099s] -- Up-to-date symlink: /home/hayashi/xarm7_ws/install/realsense_gazebo_plugin/share/realsense_gazebo_plugin/local_setup.bash
+[1.099s] -- Up-to-date symlink: /home/hayashi/xarm7_ws/install/realsense_gazebo_plugin/share/realsense_gazebo_plugin/local_setup.sh
+[1.099s] -- Up-to-date symlink: /home/hayashi/xarm7_ws/install/realsense_gazebo_plugin/share/realsense_gazebo_plugin/local_setup.zsh
+[1.099s] -- Up-to-date symlink: /home/hayashi/xarm7_ws/install/realsense_gazebo_plugin/share/realsense_gazebo_plugin/local_setup.dsv
+[1.099s] -- Symlinking: /home/hayashi/xarm7_ws/install/realsense_gazebo_plugin/share/realsense_gazebo_plugin/package.dsv
+[1.119s] -- Up-to-date symlink: /home/hayashi/xarm7_ws/install/realsense_gazebo_plugin/share/ament_index/resource_index/packages/realsense_gazebo_plugin
+[1.120s] -- Up-to-date symlink: /home/hayashi/xarm7_ws/install/realsense_gazebo_plugin/share/realsense_gazebo_plugin/cmake/ament_cmake_export_include_directories-extras.cmake
+[1.120s] -- Up-to-date symlink: /home/hayashi/xarm7_ws/install/realsense_gazebo_plugin/share/realsense_gazebo_plugin/cmake/ament_cmake_export_libraries-extras.cmake
+[1.120s] -- Up-to-date symlink: /home/hayashi/xarm7_ws/install/realsense_gazebo_plugin/share/realsense_gazebo_plugin/cmake/realsense_gazebo_pluginConfig.cmake
+[1.121s] -- Up-to-date symlink: /home/hayashi/xarm7_ws/install/realsense_gazebo_plugin/share/realsense_gazebo_plugin/cmake/realsense_gazebo_pluginConfig-version.cmake
+[1.121s] -- Up-to-date symlink: /home/hayashi/xarm7_ws/install/realsense_gazebo_plugin/share/realsense_gazebo_plugin/package.xml
+[1.123s] Invoked command in '/home/hayashi/xarm7_ws/build/realsense_gazebo_plugin' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hayashi/xarm7_ws/install/xarm_motion_planning:/home/hayashi/xarm7_ws/install/uf_ros_lib:/home/hayashi/ws_moveit/install/moveit_configs_utils:/home/hayashi/ws_moveit/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake --install /home/hayashi/xarm7_ws/build/realsense_gazebo_plugin

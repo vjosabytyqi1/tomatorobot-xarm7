@@ -1,0 +1,1 @@
+/home/hayashi/xarm7_ws/src/xarm_ros2/xarm_description/launch/_robot_rviz_display.launch.py

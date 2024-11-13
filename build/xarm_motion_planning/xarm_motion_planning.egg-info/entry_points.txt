@@ -1,0 +1,3 @@
+[console_scripts]
+xarm_motion_planning = xarm_motion_planning.xarm_motion_planning:main
+

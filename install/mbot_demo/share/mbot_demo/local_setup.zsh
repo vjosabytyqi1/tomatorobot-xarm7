@@ -1,0 +1,1 @@
+/home/hayashi/xarm7_ws/build/mbot_demo/ament_cmake_environment_hooks/local_setup.zsh

@@ -1,0 +1,590 @@
+[01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_ros/moveit_cpp/moveit_cpp.cpp:38:10:[m[K [01;31m[Kfatal error: [m[Kmoveit/utils/logger.hpp: No such file or directory
+   38 | #include [01;31m[K<moveit/utils/logger.hpp>[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/planning.dir/build.make:90: CMakeFiles/planning.dir/src/moveit/moveit_ros/moveit_cpp/moveit_cpp.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+[01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_core/planning_interface/planning_response.cpp:[m[K In function ‘[01m[Kstd::shared_ptr<robot_trajectory::RobotTrajectory> moveit_py::bind_planning_interface::getMotionPlanResponseTrajectory(std::shared_ptr<planning_interface::MotionPlanResponse>&)[m[K’:
+[01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_core/planning_interface/planning_response.cpp:46:20:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = struct planning_interface::MotionPlanResponse[m[K’ {aka ‘[01m[Kstruct planning_interface::MotionPlanResponse[m[K’} has no member named ‘[01m[Ktrajectory[m[K’; did you mean ‘[01m[Ktrajectory_[m[K’?
+   46 |   return response->[01;31m[Ktrajectory[m[K;
+      |                    [01;31m[K^~~~~~~~~~[m[K
+      |                    [32m[Ktrajectory_[m[K
+[01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_core/planning_interface/planning_response.cpp:[m[K In function ‘[01m[Kmoveit_msgs::msg::RobotState moveit_py::bind_planning_interface::getMotionPlanResponseStartState(std::shared_ptr<planning_interface::MotionPlanResponse>&)[m[K’:
+[01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_core/planning_interface/planning_response.cpp:52:60:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = struct planning_interface::MotionPlanResponse[m[K’ {aka ‘[01m[Kstruct planning_interface::MotionPlanResponse[m[K’} has no member named ‘[01m[Kstart_state[m[K’
+   52 |   moveit_msgs::msg::RobotState robot_state_msg = response->[01;31m[Kstart_state[m[K;
+      |                                                            [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_core/planning_interface/planning_response.cpp:[m[K In function ‘[01m[Kmoveit_msgs::msg::MoveItErrorCodes moveit_py::bind_planning_interface::getMotionPlanResponseErrorCode(std::shared_ptr<planning_interface::MotionPlanResponse>&)[m[K’:
+[01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_core/planning_interface/planning_response.cpp:60:65:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = struct planning_interface::MotionPlanResponse[m[K’ {aka ‘[01m[Kstruct planning_interface::MotionPlanResponse[m[K’} has no member named ‘[01m[Kerror_code[m[K’; did you mean ‘[01m[Kerror_code_[m[K’?
+   60 |       static_cast<moveit_msgs::msg::MoveItErrorCodes>(response->[01;31m[Kerror_code[m[K);
+      |                                                                 [01;31m[K^~~~~~~~~~[m[K
+      |                                                                 [32m[Kerror_code_[m[K
+[01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_core/planning_interface/planning_response.cpp:[m[K In function ‘[01m[Kdouble moveit_py::bind_planning_interface::getMotionPlanResponsePlanningTime(std::shared_ptr<planning_interface::MotionPlanResponse>&)[m[K’:
+[01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_core/planning_interface/planning_response.cpp:66:20:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = struct planning_interface::MotionPlanResponse[m[K’ {aka ‘[01m[Kstruct planning_interface::MotionPlanResponse[m[K’} has no member named ‘[01m[Kplanning_time[m[K’; did you mean ‘[01m[Kplanning_time_[m[K’?
+   66 |   return response->[01;31m[Kplanning_time[m[K;
+      |                    [01;31m[K^~~~~~~~~~~~~[m[K
+      |                    [32m[Kplanning_time_[m[K
+[01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_core/planning_interface/planning_response.cpp:[m[K In function ‘[01m[Kstd::string moveit_py::bind_planning_interface::getMotionPlanResponsePlannerId(std::shared_ptr<planning_interface::MotionPlanResponse>&)[m[K’:
+[01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_core/planning_interface/planning_response.cpp:71:20:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = struct planning_interface::MotionPlanResponse[m[K’ {aka ‘[01m[Kstruct planning_interface::MotionPlanResponse[m[K’} has no member named ‘[01m[Kplanner_id[m[K’
+   71 |   return response->[01;31m[Kplanner_id[m[K;
+      |                    [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_core/planning_interface/planning_response.cpp:[m[K In function ‘[01m[Kvoid moveit_py::bind_planning_interface::initMotionPlanResponse(pybind11::module&)[m[K’:
+[01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_core/planning_interface/planning_response.cpp:86:79:[m[K [01;31m[Kerror: [m[K‘[01m[Kplanning_time[m[K’ is not a member of ‘[01m[Kplanning_interface::MotionPlanResponse[m[K’
+   86 |       .def_readonly("planning_time", &planning_interface::MotionPlanResponse::[01;31m[Kplanning_time[m[K,
+      |                                                                               [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_core/planning_interface/planning_response.cpp:95:76:[m[K [01;31m[Kerror: [m[K‘[01m[Kplanner_id[m[K’ is not a member of ‘[01m[Kplanning_interface::MotionPlanResponse[m[K’
+   95 |       .def_readonly("planner_id", &planning_interface::MotionPlanResponse::[01;31m[Kplanner_id[m[K, py::return_value_policy::copy,
+      |                                                                            [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_core/planning_interface/planning_response.cpp:[m[K In lambda function:
+[01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_core/planning_interface/planning_response.cpp:99:26:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = struct planning_interface::MotionPlanResponse[m[K’ {aka ‘[01m[Kstruct planning_interface::MotionPlanResponse[m[K’} has no member named ‘[01m[Kerror_code[m[K’; did you mean ‘[01m[Kerror_code_[m[K’?
+   99 |         return response->[01;31m[Kerror_code[m[K.val == moveit_msgs::msg::MoveItErrorCodes::SUCCESS;
+      |                          [01;31m[K^~~~~~~~~~[m[K
+      |                          [32m[Kerror_code_[m[K
+[01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_core/planning_scene/planning_scene.cpp:[m[K In function ‘[01m[Kvoid moveit_py::bind_planning_scene::initPlanningScene(pybind11::module&)[m[K’:
+[01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_core/planning_scene/planning_scene.cpp:142:53:[m[K [01;31m[Kerror: [m[K‘[01m[KsetAllowedCollisionMatrix[m[K’ is not a member of ‘[01m[Kplanning_scene::PlanningScene[m[K’
+  142 |                     &planning_scene::PlanningScene::[01;31m[KsetAllowedCollisionMatrix[m[K,
+      |                                                     [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_ros/trajectory_execution_manager/trajectory_execution_manager.cpp:[m[K In function ‘[01m[Kvoid moveit_py::bind_trajectory_execution_manager::initTrajectoryExecutionManager(pybind11::module&)[m[K’:
+[01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_ros/trajectory_execution_manager/trajectory_execution_manager.cpp:218:71:[m[K [01;31m[Kerror: [m[K‘[01m[KexecutionDurationMonitoring[m[K’ is not a member of ‘[01m[Ktrajectory_execution_manager::TrajectoryExecutionManager[m[K’
+  218 |            &trajectory_execution_manager::TrajectoryExecutionManager::[01;31m[KexecutionDurationMonitoring[m[K,
+      |                                                                       [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_ros/trajectory_execution_manager/trajectory_execution_manager.cpp:231:71:[m[K [01;31m[Kerror: [m[K‘[01m[KallowedExecutionDurationScaling[m[K’ is not a member of ‘[01m[Ktrajectory_execution_manager::TrajectoryExecutionManager[m[K’
+  231 |            &trajectory_execution_manager::TrajectoryExecutionManager::[01;31m[KallowedExecutionDurationScaling[m[K,
+      |                                                                       [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_ros/trajectory_execution_manager/trajectory_execution_manager.cpp:243:71:[m[K [01;31m[Kerror: [m[K‘[01m[KallowedGoalDurationMargin[m[K’ is not a member of ‘[01m[Ktrajectory_execution_manager::TrajectoryExecutionManager[m[K’
+  243 |            &trajectory_execution_manager::TrajectoryExecutionManager::[01;31m[KallowedGoalDurationMargin[m[K,
+      |                                                                       [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_ros/trajectory_execution_manager/trajectory_execution_manager.cpp:257:71:[m[K [01;31m[Kerror: [m[K‘[01m[KexecutionVelocityScaling[m[K’ is not a member of ‘[01m[Ktrajectory_execution_manager::TrajectoryExecutionManager[m[K’
+  257 |            &trajectory_execution_manager::TrajectoryExecutionManager::[01;31m[KexecutionVelocityScaling[m[K,
+      |                                                                       [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_ros/trajectory_execution_manager/trajectory_execution_manager.cpp:268:98:[m[K [01;31m[Kerror: [m[K‘[01m[KallowedStartTolerance[m[K’ is not a member of ‘[01m[Ktrajectory_execution_manager::TrajectoryExecutionManager[m[K’
+  268 |       .def("allowed_start_tolerance", &trajectory_execution_manager::TrajectoryExecutionManager::[01;31m[KallowedStartTolerance[m[K,
+      |                                                                                                  [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_ros/trajectory_execution_manager/trajectory_execution_manager.cpp:280:71:[m[K [01;31m[Kerror: [m[K‘[01m[KwaitForTrajectoryCompletion[m[K’ is not a member of ‘[01m[Ktrajectory_execution_manager::TrajectoryExecutionManager[m[K’
+  280 |            &trajectory_execution_manager::TrajectoryExecutionManager::[01;31m[KwaitForTrajectoryCompletion[m[K,
+      |                                                                       [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_ros/planning_scene_monitor/planning_scene_monitor.cpp:[m[K In function ‘[01m[Kbool moveit_py::bind_planning_scene_monitor::processCollisionObject(const PlanningSceneMonitorPtr&, moveit_msgs::msg::CollisionObject&, std::optional<moveit_msgs::msg::ObjectColor_<std::allocator<void> > >)[m[K’:
+[01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_ros/planning_scene_monitor/planning_scene_monitor.cpp:52:36:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = class planning_scene_monitor::PlanningSceneMonitor[m[K’ {aka ‘[01m[Kclass planning_scene_monitor::PlanningSceneMonitor[m[K’} has no member named ‘[01m[KprocessCollisionObjectMsg[m[K’
+   52 |     return planning_scene_monitor->[01;31m[KprocessCollisionObjectMsg[m[K(const_ptr, *std::move(color_msg));
+      |                                    [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_ros/planning_scene_monitor/planning_scene_monitor.cpp:54:34:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = class planning_scene_monitor::PlanningSceneMonitor[m[K’ {aka ‘[01m[Kclass planning_scene_monitor::PlanningSceneMonitor[m[K’} has no member named ‘[01m[KprocessCollisionObjectMsg[m[K’
+   54 |   return planning_scene_monitor->[01;31m[KprocessCollisionObjectMsg[m[K(const_ptr);
+      |                                  [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_ros/planning_scene_monitor/planning_scene_monitor.cpp:[m[K In function ‘[01m[Kbool moveit_py::bind_planning_scene_monitor::processAttachedCollisionObjectMsg(const PlanningSceneMonitorPtr&, moveit_msgs::msg::AttachedCollisionObject&)[m[K’:
+[01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_ros/planning_scene_monitor/planning_scene_monitor.cpp:62:34:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = class planning_scene_monitor::PlanningSceneMonitor[m[K’ {aka ‘[01m[Kclass planning_scene_monitor::PlanningSceneMonitor[m[K’} has no member named ‘[01m[KprocessAttachedCollisionObjectMsg[m[K’
+   62 |   return planning_scene_monitor->[01;31m[KprocessAttachedCollisionObjectMsg[m[K(const_ptr);
+      |                                  [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_ros/moveit_cpp/planning_component.cpp:37[m[K:
+[01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_ros/moveit_cpp/planning_component.h:64:53:[m[K [01;31m[Kerror: [m[K‘[01m[KMultiPipelinePlanRequestParameters[m[K’ is not a member of ‘[01m[Kmoveit_cpp::PlanningComponent[m[K’
+   64 |      std::shared_ptr<moveit_cpp::PlanningComponent::[01;31m[KMultiPipelinePlanRequestParameters[m[K>& multi_plan_parameters,
+      |                                                     [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_ros/moveit_cpp/planning_component.h:64:87:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   64 |      std::shared_ptr<moveit_cpp::PlanningComponent::MultiPipelinePlanRequestParameters[01;31m[K>[m[K& multi_plan_parameters,
+      |                                                                                       [01;31m[K^[m[K
+[01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_ros/moveit_cpp/planning_component.h:66:62:[m[K [01;31m[Kerror: [m[KISO C++ forbids declaration of ‘[01m[Ktype name[m[K’ with no type [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+   66 |      std::optional<const moveit::planning_pipeline_interfaces[01;31m[K::[m[KSolutionSelectionFunction> solution_selection_function,
+      |                                                              [01;31m[K^~[m[K
+[01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_ros/moveit_cpp/planning_component.h:66:89:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   66 |      std::optional<const moveit::planning_pipeline_interfaces::SolutionSelectionFunction[01;31m[K>[m[K solution_selection_function,
+      |                                                                                         [01;31m[K^[m[K
+[01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_ros/moveit_cpp/planning_component.h:66:62:[m[K [01;31m[Kerror: [m[KISO C++ forbids declaration of ‘[01m[Ktype name[m[K’ with no type [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+   66 |      std::optional<const moveit::planning_pipeline_interfaces[01;31m[K::[m[KSolutionSelectionFunction> solution_selection_function,
+      |                                                              [01;31m[K^~[m[K
+[01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_ros/moveit_cpp/planning_component.h:66:89:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   66 |      std::optional<const moveit::planning_pipeline_interfaces::SolutionSelectionFunction[01;31m[K>[m[K solution_selection_function,
+      |                                                                                         [01;31m[K^[m[K
+[01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_ros/moveit_cpp/planning_component.h:66:62:[m[K [01;31m[Kerror: [m[KISO C++ forbids declaration of ‘[01m[Ktype name[m[K’ with no type [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+   66 |      std::optional<const moveit::planning_pipeline_interfaces[01;31m[K::[m[KSolutionSelectionFunction> solution_selection_function,
+      |                                                              [01;31m[K^~[m[K
+[01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_ros/moveit_cpp/planning_component.h:66:89:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   66 |      std::optional<const moveit::planning_pipeline_interfaces::SolutionSelectionFunction[01;31m[K>[m[K solution_selection_function,
+      |                                                                                         [01;31m[K^[m[K
+[01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_ros/moveit_cpp/planning_component.h:66:6:[m[K [01;31m[Kerror: [m[Kinvalid template-id
+   66 |      [01;31m[Kstd[m[K::optional<const moveit::planning_pipeline_interfaces::SolutionSelectionFunction> solution_selection_function,
+      |      [01;31m[K^~~[m[K
+[01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_ros/moveit_cpp/planning_component.h:66:62:[m[K [01;31m[Kerror: [m[KISO C++ forbids declaration of ‘[01m[Ktype name[m[K’ with no type [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+   66 |      std::optional<const moveit::planning_pipeline_interfaces[01;31m[K::[m[KSolutionSelectionFunction> solution_selection_function,
+      |                                                              [01;31m[K^~[m[K
+[01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_ros/moveit_cpp/planning_component.h:66:20:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[Kconst[m[K’
+   66 |      std::optional<[01;31m[Kconst[m[K moveit::planning_pipeline_interfaces::SolutionSelectionFunction> solution_selection_function,
+      |                    [01;31m[K^~~~~[m[K
+[01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_ros/moveit_cpp/planning_component.h:66:20:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K>[m[K’ before ‘[01m[Kconst[m[K’
+[01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_ros/moveit_cpp/planning_component.h:66:6:[m[K [01;31m[Kerror: [m[Kclass template placeholder ‘[01m[Kstd::optional[m[K’ not permitted in this context
+   66 |      [01;31m[Kstd[m[K::optional<const moveit::planning_pipeline_interfaces::SolutionSelectionFunction> solution_selection_function,
+      |      [01;31m[K^~~[m[K
+[01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_ros/moveit_cpp/planning_component.h:67:28:[m[K [01;31m[Kerror: [m[K‘[01m[Kplanning_pipeline_interfaces[m[K’ is not a member of ‘[01m[Kmoveit[m[K’; did you mean ‘[01m[Kplanning_interface[m[K’?
+   67 |      std::optional<moveit::[01;31m[Kplanning_pipeline_interfaces[m[K::StoppingCriterionFunction> stopping_criterion_callback);
+      |                            [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+      |                            [32m[Kplanning_interface[m[K
+[01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_ros/moveit_cpp/planning_component.h:67:83:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   67 |      std::optional<moveit::planning_pipeline_interfaces::StoppingCriterionFunction[01;31m[K>[m[K stopping_criterion_callback);
+      |                                                                                   [01;31m[K^[m[K
+[01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_ros/moveit_cpp/planning_component.h:67:28:[m[K [01;31m[Kerror: [m[K‘[01m[Kplanning_pipeline_interfaces[m[K’ is not a member of ‘[01m[Kmoveit[m[K’; did you mean ‘[01m[Kplanning_interface[m[K’?
+   67 |      std::optional<moveit::[01;31m[Kplanning_pipeline_interfaces[m[K::StoppingCriterionFunction> stopping_criterion_callback);
+      |                            [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+      |                            [32m[Kplanning_interface[m[K
+[01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_ros/moveit_cpp/planning_component.h:67:83:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   67 |      std::optional<moveit::planning_pipeline_interfaces::StoppingCriterionFunction[01;31m[K>[m[K stopping_criterion_callback);
+      |                                                                                   [01;31m[K^[m[K
+[01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_ros/moveit_cpp/planning_component.h:67:28:[m[K [01;31m[Kerror: [m[K‘[01m[Kplanning_pipeline_interfaces[m[K’ is not a member of ‘[01m[Kmoveit[m[K’; did you mean ‘[01m[Kplanning_interface[m[K’?
+   67 |      std::optional<moveit::[01;31m[Kplanning_pipeline_interfaces[m[K::StoppingCriterionFunction> stopping_criterion_callback);
+      |                            [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+      |                            [32m[Kplanning_interface[m[K
+[01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_ros/moveit_cpp/planning_component.h:67:83:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   67 |      std::optional<moveit::planning_pipeline_interfaces::StoppingCriterionFunction[01;31m[K>[m[K stopping_criterion_callback);
+      |                                                                                   [01;31m[K^[m[K
+[01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_ros/moveit_cpp/planning_component.h:67:6:[m[K [01;31m[Kerror: [m[Kinvalid template-id
+   67 |      [01;31m[Kstd[m[K::optional<moveit::planning_pipeline_interfaces::StoppingCriterionFunction> stopping_criterion_callback);
+      |      [01;31m[K^~~[m[K
+[01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_ros/moveit_cpp/planning_component.h:67:28:[m[K [01;31m[Kerror: [m[K‘[01m[Kmoveit::planning_pipeline_interfaces[m[K’ has not been declared
+   67 |      std::optional<moveit::[01;31m[Kplanning_pipeline_interfaces[m[K::StoppingCriterionFunction> stopping_criterion_callback);
+      |                            [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_ros/moveit_cpp/planning_component.h:67:6:[m[K [01;31m[Kerror: [m[Kclass template placeholder ‘[01m[Kstd::optional[m[K’ not permitted in this context
+   67 |      [01;31m[Kstd[m[K::optional<moveit::planning_pipeline_interfaces::StoppingCriterionFunction> stopping_criterion_callback);
+      |      [01;31m[K^~~[m[K
+[01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_ros/moveit_cpp/planning_component.cpp:47:53:[m[K [01;31m[Kerror: [m[K‘[01m[KMultiPipelinePlanRequestParameters[m[K’ is not a member of ‘[01m[Kmoveit_cpp::PlanningComponent[m[K’
+   47 |      std::shared_ptr<moveit_cpp::PlanningComponent::[01;31m[KMultiPipelinePlanRequestParameters[m[K>& multi_plan_parameters,
+      |                                                     [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_ros/moveit_cpp/planning_component.cpp:47:87:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   47 |      std::shared_ptr<moveit_cpp::PlanningComponent::MultiPipelinePlanRequestParameters[01;31m[K>[m[K& multi_plan_parameters,
+      |                                                                                       [01;31m[K^[m[K
+[01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_ros/moveit_cpp/planning_component.cpp:49:62:[m[K [01;31m[Kerror: [m[KISO C++ forbids declaration of ‘[01m[Ktype name[m[K’ with no type [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+   49 |      std::optional<const moveit::planning_pipeline_interfaces[01;31m[K::[m[KSolutionSelectionFunction> solution_selection_function,
+      |                                                              [01;31m[K^~[m[K
+[01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_ros/moveit_cpp/planning_component.cpp:49:89:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   49 |      std::optional<const moveit::planning_pipeline_interfaces::SolutionSelectionFunction[01;31m[K>[m[K solution_selection_function,
+      |                                                                                         [01;31m[K^[m[K
+[01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_ros/moveit_cpp/planning_component.cpp:49:62:[m[K [01;31m[Kerror: [m[KISO C++ forbids declaration of ‘[01m[Ktype name[m[K’ with no type [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+   49 |      std::optional<const moveit::planning_pipeline_interfaces[01;31m[K::[m[KSolutionSelectionFunction> solution_selection_function,
+      |                                                              [01;31m[K^~[m[K
+[01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_ros/moveit_cpp/planning_component.cpp:49:89:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   49 |      std::optional<const moveit::planning_pipeline_interfaces::SolutionSelectionFunction[01;31m[K>[m[K solution_selection_function,
+      |                                                                                         [01;31m[K^[m[K
+[01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_ros/moveit_cpp/planning_component.cpp:49:62:[m[K [01;31m[Kerror: [m[KISO C++ forbids declaration of ‘[01m[Ktype name[m[K’ with no type [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+   49 |      std::optional<const moveit::planning_pipeline_interfaces[01;31m[K::[m[KSolutionSelectionFunction> solution_selection_function,
+      |                                                              [01;31m[K^~[m[K
+[01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_ros/moveit_cpp/planning_component.cpp:49:89:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   49 |      std::optional<const moveit::planning_pipeline_interfaces::SolutionSelectionFunction[01;31m[K>[m[K solution_selection_function,
+      |                                                                                         [01;31m[K^[m[K
+[01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_ros/moveit_cpp/planning_component.cpp:49:6:[m[K [01;31m[Kerror: [m[Kinvalid template-id
+   49 |      [01;31m[Kstd[m[K::optional<const moveit::planning_pipeline_interfaces::SolutionSelectionFunction> solution_selection_function,
+      |      [01;31m[K^~~[m[K
+[01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_ros/moveit_cpp/planning_component.cpp:49:62:[m[K [01;31m[Kerror: [m[KISO C++ forbids declaration of ‘[01m[Ktype name[m[K’ with no type [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+   49 |      std::optional<const moveit::planning_pipeline_interfaces[01;31m[K::[m[KSolutionSelectionFunction> solution_selection_function,
+      |                                                              [01;31m[K^~[m[K
+[01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_ros/moveit_cpp/planning_component.cpp:49:20:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[Kconst[m[K’
+   49 |      std::optional<[01;31m[Kconst[m[K moveit::planning_pipeline_interfaces::SolutionSelectionFunction> solution_selection_function,
+      |                    [01;31m[K^~~~~[m[K
+[01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_ros/moveit_cpp/planning_component.cpp:49:20:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K>[m[K’ before ‘[01m[Kconst[m[K’
+[01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_ros/moveit_cpp/planning_component.cpp:49:6:[m[K [01;31m[Kerror: [m[Kclass template placeholder ‘[01m[Kstd::optional[m[K’ not permitted in this context
+   49 |      [01;31m[Kstd[m[K::optional<const moveit::planning_pipeline_interfaces::SolutionSelectionFunction> solution_selection_function,
+      |      [01;31m[K^~~[m[K
+[01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_ros/moveit_cpp/planning_component.cpp:50:28:[m[K [01;31m[Kerror: [m[K‘[01m[Kplanning_pipeline_interfaces[m[K’ is not a member of ‘[01m[Kmoveit[m[K’; did you mean ‘[01m[Kplanning_interface[m[K’?
+   50 |      std::optional<moveit::[01;31m[Kplanning_pipeline_interfaces[m[K::StoppingCriterionFunction> stopping_criterion_callback)
+      |                            [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+      |                            [32m[Kplanning_interface[m[K
+[01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_ros/moveit_cpp/planning_component.cpp:50:83:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   50 |      std::optional<moveit::planning_pipeline_interfaces::StoppingCriterionFunction[01;31m[K>[m[K stopping_criterion_callback)
+      |                                                                                   [01;31m[K^[m[K
+[01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_ros/moveit_cpp/planning_component.cpp:50:28:[m[K [01;31m[Kerror: [m[K‘[01m[Kplanning_pipeline_interfaces[m[K’ is not a member of ‘[01m[Kmoveit[m[K’; did you mean ‘[01m[Kplanning_interface[m[K’?
+   50 |      std::optional<moveit::[01;31m[Kplanning_pipeline_interfaces[m[K::StoppingCriterionFunction> stopping_criterion_callback)
+      |                            [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+      |                            [32m[Kplanning_interface[m[K
+[01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_ros/moveit_cpp/planning_component.cpp:50:83:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   50 |      std::optional<moveit::planning_pipeline_interfaces::StoppingCriterionFunction[01;31m[K>[m[K stopping_criterion_callback)
+      |                                                                                   [01;31m[K^[m[K
+[01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_ros/moveit_cpp/planning_component.cpp:50:28:[m[K [01;31m[Kerror: [m[K‘[01m[Kplanning_pipeline_interfaces[m[K’ is not a member of ‘[01m[Kmoveit[m[K’; did you mean ‘[01m[Kplanning_interface[m[K’?
+   50 |      std::optional<moveit::[01;31m[Kplanning_pipeline_interfaces[m[K::StoppingCriterionFunction> stopping_criterion_callback)
+      |                            [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+      |                            [32m[Kplanning_interface[m[K
+[01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_ros/moveit_cpp/planning_component.cpp:50:83:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   50 |      std::optional<moveit::planning_pipeline_interfaces::StoppingCriterionFunction[01;31m[K>[m[K stopping_criterion_callback)
+      |                                                                                   [01;31m[K^[m[K
+[01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_ros/moveit_cpp/planning_component.cpp:50:6:[m[K [01;31m[Kerror: [m[Kinvalid template-id
+   50 |      [01;31m[Kstd[m[K::optional<moveit::planning_pipeline_interfaces::StoppingCriterionFunction> stopping_criterion_callback)
+      |      [01;31m[K^~~[m[K
+[01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_ros/moveit_cpp/planning_component.cpp:50:28:[m[K [01;31m[Kerror: [m[K‘[01m[Kmoveit::planning_pipeline_interfaces[m[K’ has not been declared
+   50 |      std::optional<moveit::[01;31m[Kplanning_pipeline_interfaces[m[K::StoppingCriterionFunction> stopping_criterion_callback)
+      |                            [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_ros/moveit_cpp/planning_component.cpp:50:6:[m[K [01;31m[Kerror: [m[Kclass template placeholder ‘[01m[Kstd::optional[m[K’ not permitted in this context
+   50 |      [01;31m[Kstd[m[K::optional<moveit::planning_pipeline_interfaces::StoppingCriterionFunction> stopping_criterion_callback)
+      |      [01;31m[K^~~[m[K
+[01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_ros/moveit_cpp/planning_component.cpp:[m[K In function ‘[01m[Kplanning_interface::MotionPlanResponse moveit_py::bind_planning_component::plan(...)[m[K’:
+[01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_ros/moveit_cpp/planning_component.cpp:65:36:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kmoveit_cpp::PlanningComponent::plan(std::__shared_ptr_access<const moveit_cpp::PlanningComponent::PlanRequestParameters, __gnu_cxx::_S_atomic, false, false>::element_type&, std::shared_ptr<planning_scene::PlanningScene>&)[m[K’
+   65 |     return [01;31m[Kplanning_component->plan(*const_single_plan_parameters, planning_scene)[m[K;
+      |            [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_ros/moveit_cpp/planning_component.h:47[m[K,
+                 from [01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_ros/moveit_cpp/planning_component.cpp:37[m[K:
+[01m[K/home/hayashi/ws_moveit/install/moveit_ros_planning/include/moveit/moveit_cpp/planning_component.h:159:16:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kmoveit_cpp::PlanningComponent::PlanSolution moveit_cpp::PlanningComponent::plan()[m[K’
+  159 |   PlanSolution [01;36m[Kplan[m[K();
+      |                [01;36m[K^~~~[m[K
+[01m[K/home/hayashi/ws_moveit/install/moveit_ros_planning/include/moveit/moveit_cpp/planning_component.h:159:16:[m[K [01;36m[Knote: [m[K  candidate expects 0 arguments, 2 provided
+[01m[K/home/hayashi/ws_moveit/install/moveit_ros_planning/include/moveit/moveit_cpp/planning_component.h:162:16:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kmoveit_cpp::PlanningComponent::PlanSolution moveit_cpp::PlanningComponent::plan(const moveit_cpp::PlanningComponent::PlanRequestParameters&)[m[K’
+  162 |   PlanSolution [01;36m[Kplan[m[K(const PlanRequestParameters& parameters);
+      |                [01;36m[K^~~~[m[K
+[01m[K/home/hayashi/ws_moveit/install/moveit_ros_planning/include/moveit/moveit_cpp/planning_component.h:162:16:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 2 provided
+[01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_ros/moveit_cpp/planning_component.cpp:70:27:[m[K [01;31m[Kerror: [m[KISO C++ forbids declaration of ‘[01m[Ktype name[m[K’ with no type [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+   70 |     std::shared_ptr<const [01;31m[Kmoveit_cpp[m[K::PlanningComponent::MultiPipelinePlanRequestParameters> const_multi_plan_parameters =
+      |                           [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_ros/moveit_cpp/planning_component.cpp:70:92:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   70 |     std::shared_ptr<const moveit_cpp::PlanningComponent::MultiPipelinePlanRequestParameters[01;31m[K>[m[K const_multi_plan_parameters =
+      |                                                                                            [01;31m[K^[m[K
+[01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_ros/moveit_cpp/planning_component.cpp:71:39:[m[K [01;31m[Kerror: [m[KISO C++ forbids declaration of ‘[01m[Ktype name[m[K’ with no type [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+   71 |         std::const_pointer_cast<const [01;31m[Kmoveit_cpp[m[K::PlanningComponent::MultiPipelinePlanRequestParameters>(
+      |                                       [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_ros/moveit_cpp/planning_component.cpp:71:14:[m[K [01;31m[Kerror: [m[Kparse error in template argument list
+   71 |         std::[01;31m[Kconst_pointer_cast<const moveit_cpp::PlanningComponent::MultiPipelinePlanRequestParameters>[m[K(
+      |              [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_ros/moveit_cpp/planning_component.cpp:71:105:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kconst_pointer_cast<<expression error> >(int&)[m[K’
+   71 |         [01;31m[Kstd::const_pointer_cast<const moveit_cpp::PlanningComponent::MultiPipelinePlanRequestParameters>([m[K
+      |         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+   72 | [01;31m[K            multi_plan_parameters)[m[K;
+      |             [01;31m[K~~~~~~~~~~~~~~~~~~~~~~[m[K                                                                       
+In file included from [01m[K/usr/include/c++/11/bits/shared_ptr.h:53[m[K,
+                 from [01m[K/usr/include/c++/11/memory:77[m[K,
+                 from [01m[K/usr/include/pybind11/detail/common.h:253[m[K,
+                 from [01m[K/usr/include/pybind11/pytypes.h:12[m[K,
+                 from [01m[K/usr/include/pybind11/cast.h:13[m[K,
+                 from [01m[K/usr/include/pybind11/attr.h:13[m[K,
+                 from [01m[K/usr/include/pybind11/pybind11.h:13[m[K,
+                 from [01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_ros/moveit_cpp/planning_component.h:39[m[K,
+                 from [01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_ros/moveit_cpp/planning_component.cpp:37[m[K:
+[01m[K/usr/include/c++/11/bits/shared_ptr_base.h:1559:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Tp1, __gnu_cxx::_Lock_policy _Lp> std::__shared_ptr<_Tp1, _Lp> std::const_pointer_cast(const std::__shared_ptr<_Tp2, _Lp>&)[m[K’
+ 1559 |     [01;36m[Kconst_pointer_cast[m[K(const __shared_ptr<_Tp1, _Lp>& __r) noexcept
+      |     [01;36m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/shared_ptr_base.h:1559:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_ros/moveit_cpp/planning_component.cpp:71:105:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   71 |         [01;31m[Kstd::const_pointer_cast<const moveit_cpp::PlanningComponent::MultiPipelinePlanRequestParameters>([m[K
+      |         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+   72 | [01;31m[K            multi_plan_parameters)[m[K;
+      |             [01;31m[K~~~~~~~~~~~~~~~~~~~~~~[m[K                                                                       
+In file included from [01m[K/usr/include/c++/11/memory:77[m[K,
+                 from [01m[K/usr/include/pybind11/detail/common.h:253[m[K,
+                 from [01m[K/usr/include/pybind11/pytypes.h:12[m[K,
+                 from [01m[K/usr/include/pybind11/cast.h:13[m[K,
+                 from [01m[K/usr/include/pybind11/attr.h:13[m[K,
+                 from [01m[K/usr/include/pybind11/pybind11.h:13[m[K,
+                 from [01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_ros/moveit_cpp/planning_component.h:39[m[K,
+                 from [01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_ros/moveit_cpp/planning_component.cpp:37[m[K:
+[01m[K/usr/include/c++/11/bits/shared_ptr.h:591:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Up> std::shared_ptr<_Tp> std::const_pointer_cast(const std::shared_ptr<_Tp>&)[m[K’
+  591 |     [01;36m[Kconst_pointer_cast[m[K(const shared_ptr<_Up>& __r) noexcept
+      |     [01;36m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/shared_ptr.h:591:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_ros/moveit_cpp/planning_component.cpp:71:105:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   71 |         [01;31m[Kstd::const_pointer_cast<const moveit_cpp::PlanningComponent::MultiPipelinePlanRequestParameters>([m[K
+      |         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+   72 | [01;31m[K            multi_plan_parameters)[m[K;
+      |             [01;31m[K~~~~~~~~~~~~~~~~~~~~~~[m[K                                                                       
+[01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_ros/moveit_cpp/planning_component.cpp:74:9:[m[K [01;31m[Kerror: [m[K‘[01m[Ksolution_selection_function[m[K’ was not declared in this scope
+   74 |     if ([01;31m[Ksolution_selection_function[m[K && stopping_criterion_callback)
+      |         [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_ros/moveit_cpp/planning_component.cpp:74:40:[m[K [01;31m[Kerror: [m[K‘[01m[Kstopping_criterion_callback[m[K’ was not declared in this scope
+   74 |     if (solution_selection_function && [01;31m[Kstopping_criterion_callback[m[K)
+      |                                        [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_ros/moveit_cpp/planning_component.cpp:76:39:[m[K [01;31m[Kerror: [m[Kinvalid type argument of unary ‘[01m[K*[m[K’ (have ‘[01m[Kint[m[K’)
+   76 |       return planning_component->plan([01;31m[K*const_multi_plan_parameters[m[K, std::ref(*solution_selection_function),
+      |                                       [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_ros/moveit_cpp/planning_component.cpp:81:39:[m[K [01;31m[Kerror: [m[Kinvalid type argument of unary ‘[01m[K*[m[K’ (have ‘[01m[Kint[m[K’)
+   81 |       return planning_component->plan([01;31m[K*const_multi_plan_parameters[m[K, std::ref(*solution_selection_function), nullptr,
+      |                                       [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_ros/moveit_cpp/planning_component.cpp:86:39:[m[K [01;31m[Kerror: [m[Kinvalid type argument of unary ‘[01m[K*[m[K’ (have ‘[01m[Kint[m[K’)
+   86 |       return planning_component->plan([01;31m[K*const_multi_plan_parameters[m[K,
+      |                                       [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_ros/moveit_cpp/planning_component.cpp:87:47:[m[K [01;31m[Kerror: [m[K‘[01m[Kmoveit::planning_pipeline_interfaces[m[K’ has not been declared
+   87 |                                       moveit::[01;31m[Kplanning_pipeline_interfaces[m[K::getShortestSolution,
+      |                                               [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_ros/moveit_cpp/planning_component.cpp:92:39:[m[K [01;31m[Kerror: [m[Kinvalid type argument of unary ‘[01m[K*[m[K’ (have ‘[01m[Kint[m[K’)
+   92 |       return planning_component->plan([01;31m[K*const_multi_plan_parameters[m[K,
+      |                                       [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_ros/moveit_cpp/planning_component.cpp:93:47:[m[K [01;31m[Kerror: [m[K‘[01m[Kmoveit::planning_pipeline_interfaces[m[K’ has not been declared
+   93 |                                       moveit::[01;31m[Kplanning_pipeline_interfaces[m[K::getShortestSolution, nullptr,
+      |                                               [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_ros/moveit_cpp/planning_component.cpp:103:36:[m[K [01;31m[Kerror: [m[Kcould not convert ‘[01m[Kmoveit_cpp::PlanningComponent::plan()()[m[K’ from ‘[01m[Kmoveit_cpp::PlanningComponent::PlanSolution[m[K’ to ‘[01m[Kplanning_interface::MotionPlanResponse[m[K’
+  103 |     return [01;31m[Kplanning_component->plan()[m[K;
+      |            [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+      |                                    [01;31m[K|[m[K
+      |                                    [01;31m[Kmoveit_cpp::PlanningComponent::PlanSolution[m[K
+gmake[2]: *** [CMakeFiles/core.dir/build.make:160: CMakeFiles/core.dir/src/moveit/moveit_core/planning_interface/planning_response.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+[01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_ros/moveit_cpp/planning_component.cpp:[m[K In lambda function:
+[01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_ros/moveit_cpp/planning_component.cpp:207:20:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kmoveit_cpp::PlanningComponent::PlanRequestParameters::load(const SharedPtr&, const string&)[m[K’
+  207 |         [01;31m[Kparams.load(node, ns)[m[K;
+      |         [01;31m[K~~~~~~~~~~~^~~~~~~~~~[m[K
+In file included from [01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_ros/moveit_cpp/planning_component.h:47[m[K,
+                 from [01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_ros/moveit_cpp/planning_component.cpp:37[m[K:
+[01m[K/home/hayashi/ws_moveit/install/moveit_ros_planning/include/moveit/moveit_cpp/planning_component.h:86:10:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid moveit_cpp::PlanningComponent::PlanRequestParameters::load(const SharedPtr&)[m[K’
+   86 |     void [01;36m[Kload[m[K(const rclcpp::Node::SharedPtr& node)
+      |          [01;36m[K^~~~[m[K
+[01m[K/home/hayashi/ws_moveit/install/moveit_ros_planning/include/moveit/moveit_cpp/planning_component.h:86:10:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 2 provided
+[01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_ros/moveit_cpp/planning_component.cpp:[m[K In function ‘[01m[Kvoid moveit_py::bind_planning_component::initMultiPlanRequestParameters(pybind11::module&)[m[K’:
+[01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_ros/moveit_cpp/planning_component.cpp:240:45:[m[K [01;31m[Kerror: [m[K‘[01m[KMultiPipelinePlanRequestParameters[m[K’ is not a member of ‘[01m[Kmoveit_cpp::PlanningComponent[m[K’
+  240 |   py::class_<moveit_cpp::PlanningComponent::[01;31m[KMultiPipelinePlanRequestParameters[m[K,
+      |                                             [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_ros/moveit_cpp/planning_component.cpp:241:61:[m[K [01;31m[Kerror: [m[K‘[01m[KMultiPipelinePlanRequestParameters[m[K’ is not a member of ‘[01m[Kmoveit_cpp::PlanningComponent[m[K’
+  241 |              std::shared_ptr<moveit_cpp::PlanningComponent::[01;31m[KMultiPipelinePlanRequestParameters[m[K>>(
+      |                                                             [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_ros/moveit_cpp/planning_component.cpp:241:61:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_ros/moveit_cpp/planning_component.cpp:241:95:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  241 |              std::shared_ptr<moveit_cpp::PlanningComponent::MultiPipelinePlanRequestParameters[01;31m[K>>[m[K(
+      |                                                                                               [01;31m[K^~[m[K
+[01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_ros/moveit_cpp/planning_component.cpp:241:95:[m[K [01;31m[Kerror: [m[Ktemplate argument 2 is invalid
+[01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_ros/moveit_cpp/planning_component.cpp:[m[K In lambda function:
+[01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_ros/moveit_cpp/planning_component.cpp:249:40:[m[K [01;31m[Kerror: [m[K‘[01m[KMultiPipelinePlanRequestParameters[m[K’ is not a member of ‘[01m[Kmoveit_cpp::PlanningComponent[m[K’
+  249 |         moveit_cpp::PlanningComponent::[01;31m[KMultiPipelinePlanRequestParameters[m[K params{ node, planning_pipeline_names };
+      |                                        [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_ros/moveit_cpp/planning_component.cpp:250:16:[m[K [01;31m[Kerror: [m[K‘[01m[Kparams[m[K’ was not declared in this scope
+  250 |         return [01;31m[Kparams[m[K;
+      |                [01;31m[K^~~~~~[m[K
+[01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_ros/moveit_cpp/planning_component.cpp:[m[K In function ‘[01m[Kvoid moveit_py::bind_planning_component::initMultiPlanRequestParameters(pybind11::module&)[m[K’:
+[01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_ros/moveit_cpp/planning_component.cpp:246:20:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kinit(moveit_py::bind_planning_component::initMultiPlanRequestParameters(pybind11::module&)::<lambda(std::shared_ptr<moveit_cpp::MoveItCpp>&, const std::vector<std::__cxx11::basic_string<char>, std::allocator<std::__cxx11::basic_string<char> > >&)>)[m[K’
+  246 |       .def([01;31m[Kpy::init([](std::shared_ptr<moveit_cpp::MoveItCpp>& moveit_cpp,[m[K
+      |            [01;31m[K~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+  247 | [01;31m[K                       const std::vector<std::string>& planning_pipeline_names) {[m[K
+      |                        [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+  248 | [01;31m[K        const rclcpp::Node::SharedPtr& node = moveit_cpp->getNode();[m[K
+      |         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+  249 | [01;31m[K        moveit_cpp::PlanningComponent::MultiPipelinePlanRequestParameters params{ node, planning_pipeline_names };[m[K
+      |         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+  250 | [01;31m[K        return params;[m[K
+      |         [01;31m[K~~~~~~~~~~~~~~[m[K
+  251 | [01;31m[K      })[m[K)
+      |       [01;31m[K~~[m[K            
+In file included from [01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_ros/moveit_cpp/planning_component.h:39[m[K,
+                 from [01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_ros/moveit_cpp/planning_component.cpp:37[m[K:
+[01m[K/usr/include/pybind11/pybind11.h:1690:68:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class ... Args> pybind11::detail::initimpl::constructor<Args ...> pybind11::init()[m[K’
+ 1690 | template <typename... Args> detail::initimpl::constructor<Args...> [01;36m[Kinit[m[K() { return {}; }
+      |                                                                    [01;36m[K^~~~[m[K
+[01m[K/usr/include/pybind11/pybind11.h:1690:68:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_ros/moveit_cpp/planning_component.cpp:246:20:[m[K [01;36m[Knote: [m[K  candidate expects 0 arguments, 1 provided
+  246 |       .def([01;36m[Kpy::init([](std::shared_ptr<moveit_cpp::MoveItCpp>& moveit_cpp,[m[K
+      |            [01;36m[K~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+  247 | [01;36m[K                       const std::vector<std::string>& planning_pipeline_names) {[m[K
+      |                        [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+  248 | [01;36m[K        const rclcpp::Node::SharedPtr& node = moveit_cpp->getNode();[m[K
+      |         [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+  249 | [01;36m[K        moveit_cpp::PlanningComponent::MultiPipelinePlanRequestParameters params{ node, planning_pipeline_names };[m[K
+      |         [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+  250 | [01;36m[K        return params;[m[K
+      |         [01;36m[K~~~~~~~~~~~~~~[m[K
+  251 | [01;36m[K      })[m[K)
+      |       [01;36m[K~~[m[K            
+In file included from [01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_ros/moveit_cpp/planning_component.h:39[m[K,
+                 from [01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_ros/moveit_cpp/planning_component.cpp:37[m[K:
+[01m[K/usr/include/pybind11/pybind11.h:1697:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class Func, class Ret> Ret pybind11::init(Func&&)[m[K’
+ 1697 | Ret [01;36m[Kinit[m[K(Func &&f) { return {std::forward<Func>(f)}; }
+      |     [01;36m[K^~~~[m[K
+[01m[K/usr/include/pybind11/pybind11.h:1697:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/usr/include/pybind11/pybind11.h:1702:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class CFunc, class AFunc, class Ret> Ret pybind11::init(CFunc&&, AFunc&&)[m[K’
+ 1702 | Ret [01;36m[Kinit[m[K(CFunc &&c, AFunc &&a) {
+      |     [01;36m[K^~~~[m[K
+[01m[K/usr/include/pybind11/pybind11.h:1702:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_ros/moveit_cpp/planning_component.cpp:246:20:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+  246 |       .def([01;36m[Kpy::init([](std::shared_ptr<moveit_cpp::MoveItCpp>& moveit_cpp,[m[K
+      |            [01;36m[K~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+  247 | [01;36m[K                       const std::vector<std::string>& planning_pipeline_names) {[m[K
+      |                        [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+  248 | [01;36m[K        const rclcpp::Node::SharedPtr& node = moveit_cpp->getNode();[m[K
+      |         [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+  249 | [01;36m[K        moveit_cpp::PlanningComponent::MultiPipelinePlanRequestParameters params{ node, planning_pipeline_names };[m[K
+      |         [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+  250 | [01;36m[K        return params;[m[K
+      |         [01;36m[K~~~~~~~~~~~~~~[m[K
+  251 | [01;36m[K      })[m[K)
+      |       [01;36m[K~~[m[K            
+[01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_ros/moveit_cpp/planning_component.cpp:253:53:[m[K [01;31m[Kerror: [m[K‘[01m[Kmoveit_cpp::PlanningComponent::MultiPipelinePlanRequestParameters[m[K’ has not been declared
+  253 |                     &moveit_cpp::PlanningComponent::[01;31m[KMultiPipelinePlanRequestParameters[m[K::plan_request_parameter_vector);
+      |                                                     [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_ros/moveit_cpp/planning_component.h:39[m[K,
+                 from [01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_ros/moveit_cpp/planning_component.cpp:37[m[K:
+/usr/include/pybind11/pybind11.h: In instantiation of ‘[01m[Kpybind11::class_<type_, options>& pybind11::class_<type_, options>::def(const char*, Func&&, const Extra& ...) [with Func = planning_interface::MotionPlanResponse (*)(...); Extra = {pybind11::arg_v, pybind11::arg_v, pybind11::arg_v, pybind11::arg_v, pybind11::arg_v, pybind11::return_value_policy, char [195]}; type_ = moveit_cpp::PlanningComponent; options = {std::shared_ptr<moveit_cpp::PlanningComponent>}][m[K’:
+[01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_ros/moveit_cpp/planning_component.cpp:332:11:[m[K   required from here
+[01m[K/usr/include/pybind11/pybind11.h:1417:22:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kpybind11::cpp_function::cpp_function(planning_interface::MotionPlanResponse (*)(...), pybind11::name, pybind11::is_method, pybind11::sibling, const pybind11::arg_v&, const pybind11::arg_v&, const pybind11::arg_v&, const pybind11::arg_v&, const pybind11::arg_v&, const pybind11::return_value_policy&, const char [195])[m[K’
+ 1417 |         cpp_function [01;31m[Kcf[m[K(method_adaptor<type>(std::forward<Func>(f)), name(name_), is_method(*this),
+      |                      [01;31m[K^~[m[K
+In file included from [01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_ros/moveit_cpp/planning_component.h:39[m[K,
+                 from [01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_ros/moveit_cpp/planning_component.cpp:37[m[K:
+[01m[K/usr/include/pybind11/pybind11.h:135:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class Return, class Class, class ... Arg, class ... Extra> pybind11::cpp_function::cpp_function(Return (Class::*)(Arg ...) const &, const Extra& ...)[m[K’
+  135 |     [01;36m[Kcpp_function[m[K(Return (Class::*f)(Arg...) const&, const Extra&... extra) {
+      |     [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/usr/include/pybind11/pybind11.h:135:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_ros/moveit_cpp/planning_component.h:39[m[K,
+                 from [01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_ros/moveit_cpp/planning_component.cpp:37[m[K:
+[01m[K/usr/include/pybind11/pybind11.h:1417:22:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[KReturn (Class::*)(Arg ...) const &[m[K’ and ‘[01m[Kplanning_interface::MotionPlanResponse (*)(...)[m[K’
+ 1417 |         cpp_function [01;36m[Kcf[m[K(method_adaptor<type>(std::forward<Func>(f)), name(name_), is_method(*this),
+      |                      [01;36m[K^~[m[K
+In file included from [01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_ros/moveit_cpp/planning_component.h:39[m[K,
+                 from [01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_ros/moveit_cpp/planning_component.cpp:37[m[K:
+[01m[K/usr/include/pybind11/pybind11.h:125:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class Return, class Class, class ... Arg, class ... Extra> pybind11::cpp_function::cpp_function(Return (Class::*)(Arg ...) const, const Extra& ...)[m[K’
+  125 |     [01;36m[Kcpp_function[m[K(Return (Class::*f)(Arg...) const, const Extra&... extra) {
+      |     [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/usr/include/pybind11/pybind11.h:125:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_ros/moveit_cpp/planning_component.h:39[m[K,
+                 from [01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_ros/moveit_cpp/planning_component.cpp:37[m[K:
+[01m[K/usr/include/pybind11/pybind11.h:1417:22:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[KReturn (Class::*)(Arg ...) const[m[K’ and ‘[01m[Kplanning_interface::MotionPlanResponse (*)(...)[m[K’
+ 1417 |         cpp_function [01;36m[Kcf[m[K(method_adaptor<type>(std::forward<Func>(f)), name(name_), is_method(*this),
+      |                      [01;36m[K^~[m[K
+In file included from [01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_ros/moveit_cpp/planning_component.h:39[m[K,
+                 from [01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_ros/moveit_cpp/planning_component.cpp:37[m[K:
+[01m[K/usr/include/pybind11/pybind11.h:117:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class Return, class Class, class ... Arg, class ... Extra> pybind11::cpp_function::cpp_function(Return (Class::*)(Arg ...) &, const Extra& ...)[m[K’
+  117 |     [01;36m[Kcpp_function[m[K(Return (Class::*f)(Arg...)&, const Extra&... extra) {
+      |     [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/usr/include/pybind11/pybind11.h:117:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_ros/moveit_cpp/planning_component.h:39[m[K,
+                 from [01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_ros/moveit_cpp/planning_component.cpp:37[m[K:
+[01m[K/usr/include/pybind11/pybind11.h:1417:22:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[KReturn (Class::*)(Arg ...) &[m[K’ and ‘[01m[Kplanning_interface::MotionPlanResponse (*)(...)[m[K’
+ 1417 |         cpp_function [01;36m[Kcf[m[K(method_adaptor<type>(std::forward<Func>(f)), name(name_), is_method(*this),
+      |                      [01;36m[K^~[m[K
+In file included from [01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_ros/moveit_cpp/planning_component.h:39[m[K,
+                 from [01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_ros/moveit_cpp/planning_component.cpp:37[m[K:
+[01m[K/usr/include/pybind11/pybind11.h:107:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class Return, class Class, class ... Arg, class ... Extra> pybind11::cpp_function::cpp_function(Return (Class::*)(Arg ...), const Extra& ...)[m[K’
+  107 |     [01;36m[Kcpp_function[m[K(Return (Class::*f)(Arg...), const Extra&... extra) {
+      |     [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/usr/include/pybind11/pybind11.h:107:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_ros/moveit_cpp/planning_component.h:39[m[K,
+                 from [01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_ros/moveit_cpp/planning_component.cpp:37[m[K:
+[01m[K/usr/include/pybind11/pybind11.h:1417:22:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[KReturn (Class::*)(Arg ...)[m[K’ and ‘[01m[Kplanning_interface::MotionPlanResponse (*)(...)[m[K’
+ 1417 |         cpp_function [01;36m[Kcf[m[K(method_adaptor<type>(std::forward<Func>(f)), name(name_), is_method(*this),
+      |                      [01;36m[K^~[m[K
+In file included from [01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_ros/moveit_cpp/planning_component.h:39[m[K,
+                 from [01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_ros/moveit_cpp/planning_component.cpp:37[m[K:
+[01m[K/usr/include/pybind11/pybind11.h:99:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class Func, class ... Extra, class> pybind11::cpp_function::cpp_function(Func&&, const Extra& ...)[m[K’
+   99 |     [01;36m[Kcpp_function[m[K(Func &&f, const Extra&... extra) {
+      |     [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/usr/include/pybind11/pybind11.h:99:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/c++/11/bits/move.h:57[m[K,
+                 from [01m[K/usr/include/c++/11/bits/stl_pair.h:59[m[K,
+                 from [01m[K/usr/include/c++/11/bits/stl_algobase.h:64[m[K,
+                 from [01m[K/usr/include/c++/11/bits/specfun.h:45[m[K,
+                 from [01m[K/usr/include/c++/11/cmath:1935[m[K,
+                 from [01m[K/usr/include/c++/11/math.h:36[m[K,
+                 from [01m[K/usr/include/python3.10/pyport.h:210[m[K,
+                 from [01m[K/usr/include/python3.10/Python.h:50[m[K,
+                 from [01m[K/usr/include/pybind11/detail/common.h:215[m[K,
+                 from [01m[K/usr/include/pybind11/pytypes.h:12[m[K,
+                 from [01m[K/usr/include/pybind11/cast.h:13[m[K,
+                 from [01m[K/usr/include/pybind11/attr.h:13[m[K,
+                 from [01m[K/usr/include/pybind11/pybind11.h:13[m[K,
+                 from [01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_ros/moveit_cpp/planning_component.h:39[m[K,
+                 from [01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_ros/moveit_cpp/planning_component.cpp:37[m[K:
+/usr/include/c++/11/type_traits: In substitution of ‘[01m[Ktemplate<bool _Cond, class _Tp> using enable_if_t = typename std::enable_if::type [with bool _Cond = false; _Tp = void][m[K’:
+[01m[K/usr/include/pybind11/pybind11.h:97:15:[m[K   required from ‘[01m[Kpybind11::class_<type_, options>& pybind11::class_<type_, options>::def(const char*, Func&&, const Extra& ...) [with Func = planning_interface::MotionPlanResponse (*)(...); Extra = {pybind11::arg_v, pybind11::arg_v, pybind11::arg_v, pybind11::arg_v, pybind11::arg_v, pybind11::return_value_policy, char [195]}; type_ = moveit_cpp::PlanningComponent; options = {std::shared_ptr<moveit_cpp::PlanningComponent>}][m[K’
+[01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_ros/moveit_cpp/planning_component.cpp:332:11:[m[K   required from here
+[01m[K/usr/include/c++/11/type_traits:2579:11:[m[K [01;31m[Kerror: [m[Kno type named ‘[01m[Ktype[m[K’ in ‘[01m[Kstruct std::enable_if<false, void>[m[K’
+ 2579 |     using [01;31m[Kenable_if_t[m[K = typename enable_if<_Cond, _Tp>::type;
+      |           [01;31m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_ros/moveit_cpp/planning_component.h:39[m[K,
+                 from [01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_ros/moveit_cpp/planning_component.cpp:37[m[K:
+/usr/include/pybind11/pybind11.h: In instantiation of ‘[01m[Kpybind11::class_<type_, options>& pybind11::class_<type_, options>::def(const char*, Func&&, const Extra& ...) [with Func = planning_interface::MotionPlanResponse (*)(...); Extra = {pybind11::arg_v, pybind11::arg_v, pybind11::arg_v, pybind11::arg_v, pybind11::arg_v, pybind11::return_value_policy, char [195]}; type_ = moveit_cpp::PlanningComponent; options = {std::shared_ptr<moveit_cpp::PlanningComponent>}][m[K’:
+[01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_ros/moveit_cpp/planning_component.cpp:332:11:[m[K   required from here
+[01m[K/usr/include/pybind11/pybind11.h:91:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kpybind11::cpp_function::cpp_function(Return (*)(Args ...), const Extra& ...) [with Return = planning_interface::MotionPlanResponse; Args = {}; Extra = {pybind11::name, pybind11::is_method, pybind11::sibling, pybind11::arg_v, pybind11::arg_v, pybind11::arg_v, pybind11::arg_v, pybind11::arg_v, pybind11::return_value_policy, char [195]}][m[K’ (near match)
+   91 |     [01;36m[Kcpp_function[m[K(Return (*f)(Args...), const Extra&... extra) {
+      |     [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/usr/include/pybind11/pybind11.h:91:5:[m[K [01;36m[Knote: [m[K  conversion of argument 1 would be ill-formed:
+In file included from [01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_ros/moveit_cpp/planning_component.h:39[m[K,
+                 from [01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_ros/moveit_cpp/planning_component.cpp:37[m[K:
+[01m[K/usr/include/pybind11/pybind11.h:1417:22:[m[K [01;31m[Kerror: [m[Kinvalid conversion from ‘[01m[Kplanning_interface::MotionPlanResponse (*)(...)[m[K’ to ‘[01m[Kplanning_interface::MotionPlanResponse (*)()[m[K’ [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+ 1417 |         cpp_function [01;31m[Kcf[m[K(method_adaptor<type>(std::forward<Func>(f)), name(name_), is_method(*this),
+      |                      [01;31m[K^~[m[K
+      |                      [01;31m[K|[m[K
+      |                      [01;31m[Kplanning_interface::MotionPlanResponse (*)(...)[m[K
+In file included from [01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_ros/moveit_cpp/planning_component.h:39[m[K,
+                 from [01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_ros/moveit_cpp/planning_component.cpp:37[m[K:
+[01m[K/usr/include/pybind11/pybind11.h:86:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kpybind11::cpp_function::cpp_function(std::nullptr_t)[m[K’
+   86 |     [01;36m[Kcpp_function[m[K(std::nullptr_t) { }
+      |     [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/usr/include/pybind11/pybind11.h:86:5:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 11 provided
+[01m[K/usr/include/pybind11/pybind11.h:84:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kpybind11::cpp_function::cpp_function()[m[K’
+   84 |     [01;36m[Kcpp_function[m[K() = default;
+      |     [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/usr/include/pybind11/pybind11.h:84:5:[m[K [01;36m[Knote: [m[K  candidate expects 0 arguments, 11 provided
+[01m[K/usr/include/pybind11/pybind11.h:82:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kpybind11::cpp_function::cpp_function(const pybind11::cpp_function&)[m[K’
+   82 | class [01;36m[Kcpp_function[m[K : public function {
+      |       [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/usr/include/pybind11/pybind11.h:82:7:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 11 provided
+[01m[K/usr/include/pybind11/pybind11.h:82:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kpybind11::cpp_function::cpp_function(pybind11::cpp_function&&)[m[K’
+[01m[K/usr/include/pybind11/pybind11.h:82:7:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 11 provided
+In file included from [01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_ros/moveit_cpp/moveit_cpp.h:50[m[K,
+                 from [01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/planning.cpp:37[m[K:
+[01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_ros/moveit_cpp/planning_component.h:64:53:[m[K [01;31m[Kerror: [m[K‘[01m[KMultiPipelinePlanRequestParameters[m[K’ is not a member of ‘[01m[Kmoveit_cpp::PlanningComponent[m[K’
+   64 |      std::shared_ptr<moveit_cpp::PlanningComponent::[01;31m[KMultiPipelinePlanRequestParameters[m[K>& multi_plan_parameters,
+      |                                                     [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_ros/moveit_cpp/planning_component.h:64:87:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   64 |      std::shared_ptr<moveit_cpp::PlanningComponent::MultiPipelinePlanRequestParameters[01;31m[K>[m[K& multi_plan_parameters,
+      |                                                                                       [01;31m[K^[m[K
+[01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_ros/moveit_cpp/planning_component.h:66:62:[m[K [01;31m[Kerror: [m[KISO C++ forbids declaration of ‘[01m[Ktype name[m[K’ with no type [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+   66 |      std::optional<const moveit::planning_pipeline_interfaces[01;31m[K::[m[KSolutionSelectionFunction> solution_selection_function,
+      |                                                              [01;31m[K^~[m[K
+[01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_ros/moveit_cpp/planning_component.h:66:89:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   66 |      std::optional<const moveit::planning_pipeline_interfaces::SolutionSelectionFunction[01;31m[K>[m[K solution_selection_function,
+      |                                                                                         [01;31m[K^[m[K
+[01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_ros/moveit_cpp/planning_component.h:66:62:[m[K [01;31m[Kerror: [m[KISO C++ forbids declaration of ‘[01m[Ktype name[m[K’ with no type [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+   66 |      std::optional<const moveit::planning_pipeline_interfaces[01;31m[K::[m[KSolutionSelectionFunction> solution_selection_function,
+      |                                                              [01;31m[K^~[m[K
+[01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_ros/moveit_cpp/planning_component.h:66:89:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   66 |      std::optional<const moveit::planning_pipeline_interfaces::SolutionSelectionFunction[01;31m[K>[m[K solution_selection_function,
+      |                                                                                         [01;31m[K^[m[K
+[01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_ros/moveit_cpp/planning_component.h:66:62:[m[K [01;31m[Kerror: [m[KISO C++ forbids declaration of ‘[01m[Ktype name[m[K’ with no type [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+   66 |      std::optional<const moveit::planning_pipeline_interfaces[01;31m[K::[m[KSolutionSelectionFunction> solution_selection_function,
+      |                                                              [01;31m[K^~[m[K
+[01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_ros/moveit_cpp/planning_component.h:66:89:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   66 |      std::optional<const moveit::planning_pipeline_interfaces::SolutionSelectionFunction[01;31m[K>[m[K solution_selection_function,
+      |                                                                                         [01;31m[K^[m[K
+[01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_ros/moveit_cpp/planning_component.h:66:6:[m[K [01;31m[Kerror: [m[Kinvalid template-id
+   66 |      [01;31m[Kstd[m[K::optional<const moveit::planning_pipeline_interfaces::SolutionSelectionFunction> solution_selection_function,
+      |      [01;31m[K^~~[m[K
+[01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_ros/moveit_cpp/planning_component.h:66:62:[m[K [01;31m[Kerror: [m[KISO C++ forbids declaration of ‘[01m[Ktype name[m[K’ with no type [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+   66 |      std::optional<const moveit::planning_pipeline_interfaces[01;31m[K::[m[KSolutionSelectionFunction> solution_selection_function,
+      |                                                              [01;31m[K^~[m[K
+[01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_ros/moveit_cpp/planning_component.h:66:20:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[Kconst[m[K’
+   66 |      std::optional<[01;31m[Kconst[m[K moveit::planning_pipeline_interfaces::SolutionSelectionFunction> solution_selection_function,
+      |                    [01;31m[K^~~~~[m[K
+[01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_ros/moveit_cpp/planning_component.h:66:20:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K>[m[K’ before ‘[01m[Kconst[m[K’
+[01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_ros/moveit_cpp/planning_component.h:66:6:[m[K [01;31m[Kerror: [m[Kclass template placeholder ‘[01m[Kstd::optional[m[K’ not permitted in this context
+   66 |      [01;31m[Kstd[m[K::optional<const moveit::planning_pipeline_interfaces::SolutionSelectionFunction> solution_selection_function,
+      |      [01;31m[K^~~[m[K
+[01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_ros/moveit_cpp/planning_component.h:67:28:[m[K [01;31m[Kerror: [m[K‘[01m[Kplanning_pipeline_interfaces[m[K’ is not a member of ‘[01m[Kmoveit[m[K’; did you mean ‘[01m[Kplanning_interface[m[K’?
+   67 |      std::optional<moveit::[01;31m[Kplanning_pipeline_interfaces[m[K::StoppingCriterionFunction> stopping_criterion_callback);
+      |                            [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+      |                            [32m[Kplanning_interface[m[K
+[01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_ros/moveit_cpp/planning_component.h:67:83:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   67 |      std::optional<moveit::planning_pipeline_interfaces::StoppingCriterionFunction[01;31m[K>[m[K stopping_criterion_callback);
+      |                                                                                   [01;31m[K^[m[K
+[01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_ros/moveit_cpp/planning_component.h:67:28:[m[K [01;31m[Kerror: [m[K‘[01m[Kplanning_pipeline_interfaces[m[K’ is not a member of ‘[01m[Kmoveit[m[K’; did you mean ‘[01m[Kplanning_interface[m[K’?
+   67 |      std::optional<moveit::[01;31m[Kplanning_pipeline_interfaces[m[K::StoppingCriterionFunction> stopping_criterion_callback);
+      |                            [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+      |                            [32m[Kplanning_interface[m[K
+[01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_ros/moveit_cpp/planning_component.h:67:83:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   67 |      std::optional<moveit::planning_pipeline_interfaces::StoppingCriterionFunction[01;31m[K>[m[K stopping_criterion_callback);
+      |                                                                                   [01;31m[K^[m[K
+[01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_ros/moveit_cpp/planning_component.h:67:28:[m[K [01;31m[Kerror: [m[K‘[01m[Kplanning_pipeline_interfaces[m[K’ is not a member of ‘[01m[Kmoveit[m[K’; did you mean ‘[01m[Kplanning_interface[m[K’?
+   67 |      std::optional<moveit::[01;31m[Kplanning_pipeline_interfaces[m[K::StoppingCriterionFunction> stopping_criterion_callback);
+      |                            [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+      |                            [32m[Kplanning_interface[m[K
+[01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_ros/moveit_cpp/planning_component.h:67:83:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   67 |      std::optional<moveit::planning_pipeline_interfaces::StoppingCriterionFunction[01;31m[K>[m[K stopping_criterion_callback);
+      |                                                                                   [01;31m[K^[m[K
+[01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_ros/moveit_cpp/planning_component.h:67:6:[m[K [01;31m[Kerror: [m[Kinvalid template-id
+   67 |      [01;31m[Kstd[m[K::optional<moveit::planning_pipeline_interfaces::StoppingCriterionFunction> stopping_criterion_callback);
+      |      [01;31m[K^~~[m[K
+[01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_ros/moveit_cpp/planning_component.h:67:28:[m[K [01;31m[Kerror: [m[K‘[01m[Kmoveit::planning_pipeline_interfaces[m[K’ has not been declared
+   67 |      std::optional<moveit::[01;31m[Kplanning_pipeline_interfaces[m[K::StoppingCriterionFunction> stopping_criterion_callback);
+      |                            [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_ros/moveit_cpp/planning_component.h:67:6:[m[K [01;31m[Kerror: [m[Kclass template placeholder ‘[01m[Kstd::optional[m[K’ not permitted in this context
+   67 |      [01;31m[Kstd[m[K::optional<moveit::planning_pipeline_interfaces::StoppingCriterionFunction> stopping_criterion_callback);
+      |      [01;31m[K^~~[m[K
+[01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_core/robot_trajectory/robot_trajectory.cpp:[m[K In function ‘[01m[Kvoid moveit_py::bind_robot_trajectory::initRobotTrajectory(pybind11::module&)[m[K’:
+[01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_core/robot_trajectory/robot_trajectory.cpp:138:72:[m[K [01;31m[Kerror: [m[K‘[01m[KapplyTOTGTimeParameterization[m[K’ is not a member of ‘[01m[Ktrajectory_processing[m[K’
+  138 |       .def("apply_totg_time_parameterization", &trajectory_processing::[01;31m[KapplyTOTGTimeParameterization[m[K,
+      |                                                                        [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/hayashi/xarm7_ws/src/moveit_py/src/moveit/moveit_core/robot_trajectory/robot_trajectory.cpp:153:62:[m[K [01;31m[Kerror: [m[K‘[01m[KapplyRuckigSmoothing[m[K’ is not a member of ‘[01m[Ktrajectory_processing[m[K’
+  153 |       .def("apply_ruckig_smoothing", &trajectory_processing::[01;31m[KapplyRuckigSmoothing[m[K, py::arg("velocity_scaling_factor"),
+      |                                                              [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/core.dir/build.make:174: CMakeFiles/core.dir/src/moveit/moveit_core/planning_scene/planning_scene.cpp.o] Error 1
+gmake[2]: *** [CMakeFiles/planning.dir/build.make:118: CMakeFiles/planning.dir/src/moveit/moveit_ros/planning_scene_monitor/planning_scene_monitor.cpp.o] Error 1
+gmake[2]: *** [CMakeFiles/planning.dir/build.make:132: CMakeFiles/planning.dir/src/moveit/moveit_ros/trajectory_execution_manager/trajectory_execution_manager.cpp.o] Error 1
+gmake[2]: *** [CMakeFiles/core.dir/build.make:258: CMakeFiles/core.dir/src/moveit/moveit_core/robot_trajectory/robot_trajectory.cpp.o] Error 1
+gmake[2]: *** [CMakeFiles/planning.dir/build.make:104: CMakeFiles/planning.dir/src/moveit/moveit_ros/moveit_cpp/planning_component.cpp.o] Error 1
+gmake[2]: *** [CMakeFiles/planning.dir/build.make:76: CMakeFiles/planning.dir/src/moveit/planning.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:237: CMakeFiles/planning.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+gmake[1]: *** [CMakeFiles/Makefile2:211: CMakeFiles/core.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

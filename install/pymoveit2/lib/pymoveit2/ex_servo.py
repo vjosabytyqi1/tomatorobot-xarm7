@@ -1,0 +1,1 @@
+/home/hayashi/xarm7_ws/src/pymoveit2/examples/ex_servo.py

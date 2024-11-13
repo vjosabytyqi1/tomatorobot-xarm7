@@ -1,0 +1,1 @@
+/home/hayashi/xarm7_ws/src/pymoveit2/pymoveit2/robots/xarm7.py

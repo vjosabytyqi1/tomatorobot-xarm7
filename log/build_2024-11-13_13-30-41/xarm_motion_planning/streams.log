@@ -1,0 +1,19 @@
+[1.657s] Invoking command in '/home/hayashi/xarm7_ws/build/xarm_motion_planning': PYTHONPATH=/home/hayashi/xarm7_ws/build/xarm_motion_planning/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/hayashi/xarm7_ws/install/xarm_motion_planning/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/hayashi/xarm7_ws/build/xarm_motion_planning/build --no-deps symlink_data
+[2.072s] running develop
+[2.073s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[2.073s]   warnings.warn(
+[2.341s] running egg_info
+[2.342s] writing xarm_motion_planning.egg-info/PKG-INFO
+[2.342s] writing dependency_links to xarm_motion_planning.egg-info/dependency_links.txt
+[2.342s] writing entry points to xarm_motion_planning.egg-info/entry_points.txt
+[2.342s] writing requirements to xarm_motion_planning.egg-info/requires.txt
+[2.342s] writing top-level names to xarm_motion_planning.egg-info/top_level.txt
+[2.344s] reading manifest file 'xarm_motion_planning.egg-info/SOURCES.txt'
+[2.346s] writing manifest file 'xarm_motion_planning.egg-info/SOURCES.txt'
+[2.347s] running build_ext
+[2.348s] Creating /home/hayashi/xarm7_ws/install/xarm_motion_planning/lib/python3.10/site-packages/xarm-motion-planning.egg-link (link to .)
+[2.349s] Installing xarm_motion_planning script to /home/hayashi/xarm7_ws/install/xarm_motion_planning/lib/xarm_motion_planning
+[2.349s] 
+[2.349s] Installed /home/hayashi/xarm7_ws/build/xarm_motion_planning
+[2.349s] running symlink_data
+[2.388s] Invoked command in '/home/hayashi/xarm7_ws/build/xarm_motion_planning' returned '0': PYTHONPATH=/home/hayashi/xarm7_ws/build/xarm_motion_planning/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/hayashi/xarm7_ws/install/xarm_motion_planning/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/hayashi/xarm7_ws/build/xarm_motion_planning/build --no-deps symlink_data

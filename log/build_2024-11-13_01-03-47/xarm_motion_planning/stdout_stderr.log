@@ -1,0 +1,24 @@
+running develop
+/usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+  warnings.warn(
+running egg_info
+creating xarm_motion_planning.egg-info
+writing xarm_motion_planning.egg-info/PKG-INFO
+writing dependency_links to xarm_motion_planning.egg-info/dependency_links.txt
+writing entry points to xarm_motion_planning.egg-info/entry_points.txt
+writing requirements to xarm_motion_planning.egg-info/requires.txt
+writing top-level names to xarm_motion_planning.egg-info/top_level.txt
+writing manifest file 'xarm_motion_planning.egg-info/SOURCES.txt'
+reading manifest file 'xarm_motion_planning.egg-info/SOURCES.txt'
+writing manifest file 'xarm_motion_planning.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/hayashi/xarm7_ws/install/xarm_motion_planning/lib/python3.10/site-packages/xarm-motion-planning.egg-link (link to .)
+Installing xarm_motion_planning script to /home/hayashi/xarm7_ws/install/xarm_motion_planning/lib/xarm_motion_planning
+
+Installed /home/hayashi/xarm7_ws/build/xarm_motion_planning
+running symlink_data
+creating /home/hayashi/xarm7_ws/install/xarm_motion_planning/share/ament_index
+creating /home/hayashi/xarm7_ws/install/xarm_motion_planning/share/ament_index/resource_index
+creating /home/hayashi/xarm7_ws/install/xarm_motion_planning/share/ament_index/resource_index/packages
+symbolically linking /home/hayashi/xarm7_ws/build/xarm_motion_planning/resource/xarm_motion_planning -> /home/hayashi/xarm7_ws/install/xarm_motion_planning/share/ament_index/resource_index/packages
+symbolically linking /home/hayashi/xarm7_ws/build/xarm_motion_planning/package.xml -> /home/hayashi/xarm7_ws/install/xarm_motion_planning/share/xarm_motion_planning

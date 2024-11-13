@@ -1,0 +1,18 @@
+[0.831s] Invoking command in '/home/hayashi/xarm7_ws/build/uf_ros_lib': PYTHONPATH=/home/hayashi/xarm7_ws/build/uf_ros_lib/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/hayashi/xarm7_ws/install/uf_ros_lib/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/hayashi/xarm7_ws/build/uf_ros_lib/build --no-deps symlink_data
+[0.987s] running develop
+[0.987s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[0.987s]   warnings.warn(
+[1.092s] running egg_info
+[1.092s] writing uf_ros_lib.egg-info/PKG-INFO
+[1.092s] writing dependency_links to uf_ros_lib.egg-info/dependency_links.txt
+[1.092s] writing entry points to uf_ros_lib.egg-info/entry_points.txt
+[1.092s] writing requirements to uf_ros_lib.egg-info/requires.txt
+[1.092s] writing top-level names to uf_ros_lib.egg-info/top_level.txt
+[1.094s] reading manifest file 'uf_ros_lib.egg-info/SOURCES.txt'
+[1.094s] writing manifest file 'uf_ros_lib.egg-info/SOURCES.txt'
+[1.095s] running build_ext
+[1.095s] Creating /home/hayashi/xarm7_ws/install/uf_ros_lib/lib/python3.10/site-packages/uf-ros-lib.egg-link (link to .)
+[1.095s] 
+[1.095s] Installed /home/hayashi/xarm7_ws/build/uf_ros_lib
+[1.095s] running symlink_data
+[1.112s] Invoked command in '/home/hayashi/xarm7_ws/build/uf_ros_lib' returned '0': PYTHONPATH=/home/hayashi/xarm7_ws/build/uf_ros_lib/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/hayashi/xarm7_ws/install/uf_ros_lib/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/hayashi/xarm7_ws/build/uf_ros_lib/build --no-deps symlink_data

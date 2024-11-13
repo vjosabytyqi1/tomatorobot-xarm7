@@ -1,0 +1,26 @@
+[1.103s] Invoking command in '/home/hayashi/xarm7_ws/build/xarm_motion_planning': PYTHONPATH=/home/hayashi/xarm7_ws/build/xarm_motion_planning/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/hayashi/xarm7_ws/install/xarm_motion_planning/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/hayashi/xarm7_ws/build/xarm_motion_planning/build --no-deps symlink_data
+[1.558s] running develop
+[1.558s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[1.558s]   warnings.warn(
+[1.962s] running egg_info
+[1.962s] creating xarm_motion_planning.egg-info
+[1.962s] writing xarm_motion_planning.egg-info/PKG-INFO
+[1.962s] writing dependency_links to xarm_motion_planning.egg-info/dependency_links.txt
+[1.967s] writing entry points to xarm_motion_planning.egg-info/entry_points.txt
+[1.967s] writing requirements to xarm_motion_planning.egg-info/requires.txt
+[1.967s] writing top-level names to xarm_motion_planning.egg-info/top_level.txt
+[1.967s] writing manifest file 'xarm_motion_planning.egg-info/SOURCES.txt'
+[1.974s] reading manifest file 'xarm_motion_planning.egg-info/SOURCES.txt'
+[1.978s] writing manifest file 'xarm_motion_planning.egg-info/SOURCES.txt'
+[1.978s] running build_ext
+[1.978s] Creating /home/hayashi/xarm7_ws/install/xarm_motion_planning/lib/python3.10/site-packages/xarm-motion-planning.egg-link (link to .)
+[1.978s] Installing xarm_motion_planning script to /home/hayashi/xarm7_ws/install/xarm_motion_planning/lib/xarm_motion_planning
+[1.978s] 
+[1.978s] Installed /home/hayashi/xarm7_ws/build/xarm_motion_planning
+[1.979s] running symlink_data
+[1.979s] creating /home/hayashi/xarm7_ws/install/xarm_motion_planning/share/ament_index
+[1.979s] creating /home/hayashi/xarm7_ws/install/xarm_motion_planning/share/ament_index/resource_index
+[1.979s] creating /home/hayashi/xarm7_ws/install/xarm_motion_planning/share/ament_index/resource_index/packages
+[1.979s] symbolically linking /home/hayashi/xarm7_ws/build/xarm_motion_planning/resource/xarm_motion_planning -> /home/hayashi/xarm7_ws/install/xarm_motion_planning/share/ament_index/resource_index/packages
+[1.979s] symbolically linking /home/hayashi/xarm7_ws/build/xarm_motion_planning/package.xml -> /home/hayashi/xarm7_ws/install/xarm_motion_planning/share/xarm_motion_planning
+[2.027s] Invoked command in '/home/hayashi/xarm7_ws/build/xarm_motion_planning' returned '0': PYTHONPATH=/home/hayashi/xarm7_ws/build/xarm_motion_planning/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/hayashi/xarm7_ws/install/xarm_motion_planning/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/hayashi/xarm7_ws/build/xarm_motion_planning/build --no-deps symlink_data
